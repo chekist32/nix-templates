@@ -21,7 +21,7 @@
         in
         {
           default = pkgs.mkShell {
-            buildInputs = with pkgs; [
+            packages = with pkgs; [
               # add your packages here
             ];
           };
