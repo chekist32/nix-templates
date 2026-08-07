@@ -1,0 +1,6 @@
+{
+    "lldb.launch.initCommands": [
+        "command script import ${env:RUST_LLDB_SYSROOT}/lib/rustlib/etc/lldb_lookup.py",
+        "command source -s 0 ${env:RUST_LLDB_SYSROOT}/lib/rustlib/etc/lldb_commands"
+    ]
+}
