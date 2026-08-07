@@ -43,7 +43,7 @@
           rustToolchain = rustToolchainFor.${system};
         in
         {
-          devShells.default = pkgs.mkShell {
+          default = pkgs.mkShell {
             packages = [ rustToolchain ];
             shellHook = ''
               export RUST_LLDB_SYSROOT="${rustToolchain}"
